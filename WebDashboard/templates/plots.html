@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plots</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Plots</h1>
+    {% if temperature_plot %}
+    <img src="{{ url_for('serve_plot', plot_name=temperature_plot) }}" alt="Temperature Plot">
+    {% endif %}
+    {% if humidity_plot %}
+    <img src="{{ url_for('serve_plot', plot_name=humidity_plot) }}" alt="Humidity Plot">
+    {% endif %}
+    {% if ph_plot %}
+    <img src="{{ url_for('serve_plot', plot_name=ph_plot) }}" alt="pH Plot">
+    {% endif %}
+    {% if light_plot %}
+    <img src="{{ url_for('serve_plot', plot_name=light_plot) }}" alt="Light Plot">
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,56 @@
+{
+    "water": {
+        "temperature": {
+            "low": 14,
+            "high": 25
+        },
+        "humidity": {
+            "low": 45,
+            "high": 85
+        },
+        "ph": {
+            "low": 6.6,
+            "high": 8
+        },
+        "light": {
+            "low": 60,
+            "high": 100
+        }
+    },
+    "dry": {
+        "temperature": {
+            "low": 20,
+            "high": 35
+        },
+        "humidity": {
+            "low": 30,
+            "high": 60
+        },
+        "ph": {
+            "low": 7,
+            "high": 9
+        },
+        "light": {
+            "low": 80,
+            "high": 120
+        }
+    },
+    "tropical": {
+        "temperature": {
+            "low": 25,
+            "high": 35
+        },
+        "humidity": {
+            "low": 60,
+            "high": 90
+        },
+        "ph": {
+            "low": 5.5,
+            "high": 7.5
+        },
+        "light": {
+            "low": 100,
+            "high": 150
+        }
+    }
+}

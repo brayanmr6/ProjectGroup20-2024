@@ -1,0 +1,8 @@
+{
+    "endpoints": {
+        "getCatalog": "http://srcatalog:8089/catalog/printall",
+        "createChannelThingsspeak": "https://api.thingspeak.com/channels.json",
+        "registerService": "http://srcatalog:8089/services/registerservice"
+    },
+    "thingspeakUserAPIKEY": "NCJ9T2S02NTU7DC9"
+}

@@ -1,0 +1,13 @@
+{
+    "endpoints": {
+        "getDevices": "http://srcatalog:8089/devices/printalldevices",
+        "getGardens": "http://srcatalog:8089/gardens/printallgardens",
+        "getMQTTdata": "http://srcatalog:8089/mqtt/mqttdata",
+        "updateDevice": "http://srcatalog:8089/devices/updatedevice/",
+        "updateStrategy": "http://srcatalog:8089/strategies/updatestrategy/",
+        "getStrategies": "http://srcatalog:8089/strategies/printallstrategies",
+        "registerService": "http://srcatalog:8089/services/registerservice"
+    },
+    "MQTTbroker": "mqtt.eclipseprojects.io",
+    "port": 1883
+}

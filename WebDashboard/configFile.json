@@ -1,0 +1,7 @@
+{"getUsers": "http://srcatalog:8089/users/printallusers",
+"getGardensUser": "http://srcatalog:8089/gardens/searchgardensuser/{user}",
+"getMessages": "http://thingspeakadaptor:8087/messages/getmessages",
+"getChannelsAndAPIKeys": "http://telegrambot:8085/channels/getchannalsandreadapis",
+"registerService": "http://srcatalog:8089/services/registerservice",
+"base_url": "https://api.thingspeak.com/channels/{channel_id}/feeds.json",
+"URL": "{base_url}?api_key={api_key}&results=100"}

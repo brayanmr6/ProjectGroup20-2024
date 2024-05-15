@@ -1,0 +1,13 @@
+{
+    "endpoints": {
+        "getchatbotToken": "http://srcatalog:8089/chatbot/getchatbottoken",
+        "getGardens": "http://srcatalog:8089/gardens/printallgardens",
+        "getUsers": "http://srcatalog:8089/users/printallusers",
+        "updateGarden": "http://srcatalog:8089/gardens/updategarden",
+        "registerService": "http://srcatalog:8089/services/registerservice",
+        "MQTTbroker": "mqtt.eclipseprojects.io",
+        "port": 1883
+    },
+    "base_url": "https://api.thingspeak.com/channels/{channel_id}/feeds.json",
+    "URL": "{base_url}?api_key={api_key}&results=100"
+}

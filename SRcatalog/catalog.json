@@ -1,0 +1,140 @@
+{
+    "MQTTbroker": "mqtt.eclipseprojects.io",
+    "port": 1883,
+    "users": [
+        {
+            "username": "Mike",
+            "userID": 1,
+            "password": "password1",
+            "registration_date": "02-04-2024",
+            "gardens": [
+                1,
+                2
+            ]
+        },
+        {
+            "username": "Pepe",
+            "userID": 2,
+            "password": "password2",
+            "registration_date": "09-04-2024",
+            "gardens": []
+        }
+    ],
+    "gardens": [
+        {
+            "gardenName": "CoolGarden",
+            "ecosystemType": "water",
+            "gardenID": 1,
+            "registrationDate": "02-04-2024",
+            "gardenOwnerUserID": 1,
+            "availableMeasures": [
+                "Temperature",
+                "Humidity"
+            ],
+            "availableDevices": [
+                1,
+                2
+            ],
+            "externalLights": "on"
+        },
+        {
+            "gardenName": "BoringGarden",
+            "ecosystemType": "dry",
+            "gardenID": 2,
+            "registrationDate": "02-04-2024",
+            "gardenOwnerUserID": 1,
+            "availableMeasures": [
+                "pH",
+                "light"
+            ],
+            "availableDevices": [
+                3,
+                4
+            ],
+            "externalLights": "on"
+        }
+    ],
+    "devices": [
+        {
+            "deviceName": "DHLT11",
+            "measureType": [
+                "Temperature"
+            ],
+            "gardenID": 1,
+            "availableServices": [
+                "MQTT"
+            ],
+            "deviceID": 1,
+            "registrationDate": "02-04-2024",
+            "status": "on",
+            "unit": "Cel",
+            "MQTTtopics": [
+                "IoTProject/1/temperature/1"
+            ]
+        },
+        {
+            "deviceName": "SMUC23",
+            "measureType": [
+                "Humidity"
+            ],
+            "gardenID": 1,
+            "availableServices": [
+                "MQTT"
+            ],
+            "deviceID": 2,
+            "registrationDate": "02-04-2024",
+            "status": "on",
+            "unit": "%",
+            "MQTTtopics": [
+                "IoTProject/1/humidity/2"
+            ]
+        },
+        {
+            "deviceName": "elgatoSens-413",
+            "measureType": [
+                "pH"
+            ],
+            "gardenID": 2,
+            "availableServices": [
+                "MQTT"
+            ],
+            "deviceID": 3,
+            "registrationDate": "03-04-2024",
+            "status": "off",
+            "unit": "units",
+            "MQTTtopics": [
+                "IoTProject/2/ph/3"
+            ]
+        },
+        {
+            "deviceName": "phillips13tYAda",
+            "measureType": [
+                "light"
+            ],
+            "gardenID": 2,
+            "availableServices": [
+                "MQTT"
+            ],
+            "deviceID": 4,
+            "registrationDate": "03-04-2024",
+            "status": "off",
+            "unit": "Lux",
+            "MQTTtopics": [
+                "IoTProject/2/light/4"
+            ]
+        }
+    ],
+    "strategies": [
+        {
+            "maximumValue": 25,
+            "minimumValue": 30,
+            "gardenID": 1,
+            "ecosystemType": "water",
+            "registrationDate": "23-04-2024",
+            "measureType": "temperature",
+            "status": "off"
+        }
+    ],
+    "chatbotToken": "7063657147:AAFWqTBUlui9mx6NwJqpDy7YcMA1d-tE7x8",
+    "services": []
+}

@@ -1,0 +1,74 @@
+version: "3"
+
+services:
+  srcatalog:
+    build: ./SRcatalog
+    container_name: srcatalog
+    networks:
+      - testnetwork2
+    ports:
+      - "8089:8089"
+
+  deviceconnector:
+    build: ./DeviceConnector        
+    container_name: deviceconnector
+    networks:
+      - testnetwork2
+    depends_on:
+      - srcatalog
+    ports:
+      - "8088:8088"
+
+  thingspeakadaptor:
+    build: ./ThingspeakAdaptor      
+    container_name: thingspeakadaptor
+    networks:
+      - testnetwork2
+    depends_on: 
+      - deviceconnector
+    ports:
+      - "8087:8087"
+
+  dataanalytics:
+    build: ./DataAnalytics
+    container_name: dataanalytics
+    networks:
+      - testnetwork2
+    depends_on:
+      - thingspeakadaptor
+    ports:
+      - "8086:8086"
+
+  telegrambot:
+    build: ./TelegramBot
+    container_name: telegrambot
+    networks:
+      - testnetwork2
+    depends_on:
+      - dataanalytics
+    ports:
+      - "8085:8085"
+
+  telegrambotresponder:
+    build: ./TelegramBotResponder
+    container_name: telegrambotresponder
+    networks:
+      - testnetwork2
+    depends_on:
+      - telegrambot
+    ports:
+      - "8084:8084"
+
+  webdashboard:
+    build: ./WebDashboard
+    container_name: webdashboard
+    networks:
+      - testnetwork2
+    depends_on:
+      - telegrambotresponder
+    ports:
+      - "8083:8083"
+
+networks:
+  testnetwork2:
+  

@@ -1,0 +1,4 @@
+{
+    "getchatdata": "http://telegrambot:8085/getchatdata",
+    "registerService": "http://srcatalog:8089/services/registerservice"
+}

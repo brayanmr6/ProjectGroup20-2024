@@ -1,0 +1,9 @@
+{
+    "endpoints": {
+        "getCatalog": "http://srcatalog:8089/catalog/printall",
+        "getMessages": "http://thingspeakadaptor:8087/messages/getmessages",
+        "MQTTbroker": "mqtt.eclipseprojects.io",
+        "port": 1883,
+        "registerService": "http://srcatalog:8089/services/registerservice"
+    }
+}
