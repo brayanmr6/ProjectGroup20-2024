@@ -64,7 +64,7 @@ class thingspeakKeys(object):
                 keyIndex = "garden{}WriteAPIKEY".format(gardenID)
                 self.data[keyIndex] = key
                 self.save_data()
-                return "The new strategy has been registered successfully."
+                return "The write API key has been registered successfully."
 
 
 class MessageStore:
