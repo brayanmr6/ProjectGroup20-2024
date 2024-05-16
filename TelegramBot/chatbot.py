@@ -442,6 +442,7 @@ class chatBot:
                                     "- Request last available measurements of a garden: </last gardenID>\n"
                                     "- Request daily average: </daily gardenID>\n"
                                     "- Request hourly average: </hourly gardenID>\n"
+                                    "- Control external lights: </externallights gardenID on/off>\n"
                                     "- Request plot of a measure: </plots gardenID>")
                     self.loged = True
                     break
