@@ -41,4 +41,5 @@ There are some predefined entities in the catalog.json file, available for testi
 In a command prompt the following 2 lines (if in the correct folder) run the docker-compose.yml file and deploy all the containers.
 
 docker network create testnetwork2
+
 docker-compose up
